@@ -1,0 +1,1 @@
+LinkLens is a lightweight AI service that helps users, bots, and platforms detect affiliate links, hidden referrals, and promotional intent — with sentiment analysis of surrounding text to judge how honest or ad-like a link really is.
