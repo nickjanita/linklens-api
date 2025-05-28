@@ -1,5 +1,5 @@
-{
-  "affiliateParams": [
+const affiliateData = {
+  affiliateParams: [
     "ref",
     "refid",
     "aff",
@@ -10,14 +10,15 @@
     "utm_campaign",
     "clickid",
     "gclid",
-    "tag"
   ],
-  "affiliateDomains": [
+  affiliateDomains: [
     "amzn.to",
     "rstyle.me",
     "impact.com",
     "shareasale.com",
     "clickbank.net",
-    "go2cloud.org"
-  ]
-}
+    "go2cloud.org",
+  ],
+};
+
+export default affiliateData;

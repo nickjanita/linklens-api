@@ -12,6 +12,7 @@
   "license": "MIT",
   "description": "LinkLens is a lightweight AI service that helps users, bots, and platforms detect affiliate links, hidden referrals, and promotional intent — with sentiment analysis of surrounding text to judge how honest or ad-like a link really is.",
   "dependencies": {
+    "axios": "^1.9.0",
     "express": "^5.1.0",
     "tldts": "^7.0.7"
   },
