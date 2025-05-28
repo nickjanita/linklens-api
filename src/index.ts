@@ -1,22 +1,14 @@
 import express from "express";
-import { analyzeLink } from "./utils/linkAnalyzer";
+import analyzeRoutes from "./routes/analyze";
 
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
 
-app.post("/analyze-link", (req, res) => {
-  const { url } = req.body;
-
-  if (!url) {
-    return res.status(400).json({ error: "Missing URL in request body" });
-  }
-
-  const result = analyzeLink(url);
-  res.json(result);
-});
+// Use the modular router
+app.use("/", analyzeRoutes);
 
 app.listen(PORT, () => {
-  console.log(`🔍 LinkLens API is running on http://localhost:${PORT}`);
+  console.log(`LinkLens API running at http://localhost:${PORT}`);
 });

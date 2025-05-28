@@ -2,7 +2,7 @@ import { parse as parseUrl } from "url";
 import { parse as parseQuery } from "querystring";
 import { parse as parseDomain } from "tldts";
 
-import affiliateData from "../../data/affiliateData.json";
+import affiliateData from "../config/affiliateData.json";
 
 export function analyzeLink(url: string) {
   const parsed = parseUrl(url);
